@@ -21,3 +21,51 @@ Distill is a publication format for scientific and technical writing, native to 
 Learn more about using Distill at <https://rstudio.github.io/distill>.
 
 
+# 1.0 Critique of Visualisation
+
+The original visualisation can be seen below.
+
+![](img/original visualisation.png)
+
+### 1.1 Clarity
+1.	The chart Title stated 2019-2020 duration but most of the graph show 2019 to 2021 and for Japan, the data shown is only for 2020. The chart title could have been more specific to mentioned that this data is for import and export trades of the six countries.
+2.	The dual x axis is not of equal scale and this may create misrepresentation visually. 
+3.	Y axis show month of period, but the months wasn’t shown in the y axis and this create confusion which period is the months being used and there is 2021 data being included
+4.	The x axis scale are not consistent for import and export. For example, for Hong Kong, the export is in scale of millions and import are in scale of thousands
+5.	Poor choice of chart used as area chart doesn’t look clear when import and export data are combined and overlap each other. This result in difficulty in interpreting the data
+6.	There are three type of colours appearing in some of the charts (for example mainland china and Malaysia) despite the legends only show two colours. This create confusion on the colour not stated in the legend and what is this colour for. 
+7.	There is a lack of meaning in the charts as we couldn’t see the pattern of the import and exports
+
+### 1.2 Aesthetic
+1.	Poor use of colour, the muddy yellow doesn’t look appealing and didn’t mix very well with the blue colour
+2.	Export and import are repeated over all charts and make the charts all look very cramp altogether
+3.	The countries name are not layout properly and not align in the middle of the graph it is representing
+4.	The countries name font are bigger than the title of the chart 
+5.	The measure names in the legend should not be there as it represent no meaning to the viewer
+6.	There is a lack of guidelines or marker on the axis to clearly label the data
+
+# 2.0 Alternative Design
+
+### 2.1 Clarity
+1.	Clearer title to illustrate what the charts are presenting on the 6 countries export and import data
+2.	To provide a clear illustration using same scale for the import and export data for x axis
+3.	All the charts to show consistent data for comparison from Jan 2019 to Dec 2020 for y axis
+4.	Using a line chart which WILL present time series data more Clearly
+5.	Trade data are usually more seasonal and quarter data may help to show the trends 
+
+### 2.2 Aesthetic
+1.	Use of two colour, one to represent import and one to represent export to make viewing more clearer and consistent
+2.  Annotations are used to emphasize key observations. (when imports or exports volume drop)
+3.  Colour is used to bring to attention different categories (blue for import, red for export)
+4.  Y-axis is formatted to same scale
+
+# 3.0 Proposed Visualisation
+
+Please view the interactive visualisation on Tableau Public here remember to create link here 
+
+# 4.0 Step-by-step Guide
+
+# 5.0 Derived Insights
+
+
+

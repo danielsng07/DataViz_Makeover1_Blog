@@ -116,7 +116,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["dataviz-makeover-1_files/anchor-4.2.2/anchor.min.js","dataviz-makeover-1_files/bowser-1.9.3/bowser.min.js","dataviz-makeover-1_files/distill-2.2.21/template.v2.js","dataviz-makeover-1_files/header-attrs-2.7/header-attrs.js","dataviz-makeover-1_files/jquery-1.11.3/jquery.min.js","dataviz-makeover-1_files/popper-2.6.0/popper.min.js","dataviz-makeover-1_files/tippy-6.2.7/tippy-bundle.umd.min.js","dataviz-makeover-1_files/tippy-6.2.7/tippy-light-border.css","dataviz-makeover-1_files/tippy-6.2.7/tippy.css","dataviz-makeover-1_files/tippy-6.2.7/tippy.umd.min.js","dataviz-makeover-1_files/webcomponents-2.0.0/webcomponents.js"]}
+  {"type":"character","attributes":{},"value":["dataviz-makeover-1_files/anchor-4.2.2/anchor.min.js","dataviz-makeover-1_files/bowser-1.9.3/bowser.min.js","dataviz-makeover-1_files/distill-2.2.21/template.v2.js","dataviz-makeover-1_files/header-attrs-2.7/header-attrs.js","dataviz-makeover-1_files/jquery-1.11.3/jquery.min.js","dataviz-makeover-1_files/popper-2.6.0/popper.min.js","dataviz-makeover-1_files/tippy-6.2.7/tippy-bundle.umd.min.js","dataviz-makeover-1_files/tippy-6.2.7/tippy-light-border.css","dataviz-makeover-1_files/tippy-6.2.7/tippy.css","dataviz-makeover-1_files/tippy-6.2.7/tippy.umd.min.js","dataviz-makeover-1_files/webcomponents-2.0.0/webcomponents.js","img/original visualisation.png"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
   <!--/radix_placeholder_navigation_in_header-->
@@ -1480,6 +1480,48 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <div class="d-article">
 <p>Distill is a publication format for scientific and technical writing, native to the web.</p>
 <p>Learn more about using Distill at <a href="https://rstudio.github.io/distill" class="uri">https://rstudio.github.io/distill</a>.</p>
+<h1 id="critique-of-visualisation">1.0 Critique of Visualisation</h1>
+<p>The original visualisation can be seen below.</p>
+<p><img src="img/original%20visualisation.png" /></p>
+<h3 id="clarity">1.1 Clarity</h3>
+<ol type="1">
+<li>The chart Title stated 2019-2020 duration but most of the graph show 2019 to 2021 and for Japan, the data shown is only for 2020. The chart title could have been more specific to mentioned that this data is for import and export trades of the six countries.</li>
+<li>The dual x axis is not of equal scale and this may create misrepresentation visually.</li>
+<li>Y axis show month of period, but the months wasn’t shown in the y axis and this create confusion which period is the months being used and there is 2021 data being included</li>
+<li>The x axis scale are not consistent for import and export. For example, for Hong Kong, the export is in scale of millions and import are in scale of thousands</li>
+<li>Poor choice of chart used as area chart doesn’t look clear when import and export data are combined and overlap each other. This result in difficulty in interpreting the data</li>
+<li>There are three type of colours appearing in some of the charts (for example mainland china and Malaysia) despite the legends only show two colours. This create confusion on the colour not stated in the legend and what is this colour for.</li>
+<li>There is a lack of meaning in the charts as we couldn’t see the pattern of the import and exports</li>
+</ol>
+<h3 id="aesthetic">1.2 Aesthetic</h3>
+<ol type="1">
+<li>Poor use of colour, the muddy yellow doesn’t look appealing and didn’t mix very well with the blue colour</li>
+<li>Export and import are repeated over all charts and make the charts all look very cramp altogether</li>
+<li>The countries name are not layout properly and not align in the middle of the graph it is representing</li>
+<li>The countries name font are bigger than the title of the chart</li>
+<li>The measure names in the legend should not be there as it represent no meaning to the viewer</li>
+<li>There is a lack of guidelines or marker on the axis to clearly label the data</li>
+</ol>
+<h1 id="alternative-design">2.0 Alternative Design</h1>
+<h3 id="clarity-1">2.1 Clarity</h3>
+<ol type="1">
+<li>Clearer title to illustrate what the charts are presenting on the 6 countries export and import data</li>
+<li>To provide a clear illustration using same scale for the import and export data for x axis</li>
+<li>All the charts to show consistent data for comparison from Jan 2019 to Dec 2020 for y axis</li>
+<li>Using a line chart which WILL present time series data more Clearly</li>
+<li>Trade data are usually more seasonal and quarter data may help to show the trends</li>
+</ol>
+<h3 id="aesthetic-1">2.2 Aesthetic</h3>
+<ol type="1">
+<li>Use of two colour, one to represent import and one to represent export to make viewing more clearer and consistent</li>
+<li>Annotations are used to emphasize key observations. (when imports or exports volume drop)</li>
+<li>Colour is used to bring to attention different categories (blue for import, red for export)</li>
+<li>Y-axis is formatted to same scale</li>
+</ol>
+<h1 id="proposed-visualisation">3.0 Proposed Visualisation</h1>
+<p>Please view the interactive visualisation on Tableau Public here remember to create link here</p>
+<h1 id="step-by-step-guide">4.0 Step-by-step Guide</h1>
+<h1 id="derived-insights">5.0 Derived Insights</h1>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
