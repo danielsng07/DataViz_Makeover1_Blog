@@ -6,14 +6,14 @@
       "description": "Some additional details about the blog",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-05-27T22:44:45+08:00"
+      "last_modified": "2021-05-28T00:43:21+08:00"
     },
     {
       "path": "index.html",
       "title": "DataViz Makeover1 Blog",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-05-27T22:44:46+08:00"
+      "last_modified": "2021-05-28T00:43:26+08:00"
     }
   ],
   "collections": ["posts/posts.json"]

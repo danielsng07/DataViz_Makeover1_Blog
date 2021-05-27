@@ -1,7 +1,7 @@
 [
   {
-    "path": "posts/welcome/",
-    "title": "DataViz Makeover1",
+    "path": "posts/2021-05-28-dataviz-makeover-1/",
+    "title": "DataViz Makeover 1",
     "description": "DataViz Makeover 1 for ISSS608: Visual Analytics",
     "author": [
       {
@@ -9,11 +9,11 @@
         "url": "https://app.netlify.com/teams/danielsng07"
       }
     ],
-    "date": "2021-05-27",
+    "date": "2021-05-28",
     "categories": [],
-    "contents": "\r\n\r\n\r\n\r\n",
+    "contents": "\r\nDistill is a publication format for scientific and technical writing, native to the web.\r\nLearn more about using Distill at https://rstudio.github.io/distill.\r\n\r\n\r\n\r\n",
     "preview": {},
-    "last_modified": "2021-05-27T22:27:01+08:00",
+    "last_modified": "2021-05-28T00:37:39+08:00",
     "input_file": {}
   }
 ]
