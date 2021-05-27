@@ -1,0 +1,5 @@
+---
+title: "DataViz Makeover1 Blog"
+site: distill::distill_website
+listing: posts
+---

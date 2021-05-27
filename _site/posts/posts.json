@@ -1,0 +1,19 @@
+[
+  {
+    "path": "posts/welcome/",
+    "title": "DataViz Makeover1",
+    "description": "DataViz Makeover 1 for ISSS608: Visual Analytics",
+    "author": [
+      {
+        "name": "Sng Kah Leong",
+        "url": "https://app.netlify.com/teams/danielsng07"
+      }
+    ],
+    "date": "2021-05-27",
+    "categories": [],
+    "contents": "\r\n\r\n\r\n\r\n",
+    "preview": {},
+    "last_modified": "2021-05-27T22:27:01+08:00",
+    "input_file": {}
+  }
+]
