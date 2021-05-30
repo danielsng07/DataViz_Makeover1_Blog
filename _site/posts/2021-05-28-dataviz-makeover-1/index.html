@@ -117,7 +117,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["dataviz-makeover-1_files/anchor-4.2.2/anchor.min.js","dataviz-makeover-1_files/bowser-1.9.3/bowser.min.js","dataviz-makeover-1_files/distill-2.2.21/template.v2.js","dataviz-makeover-1_files/header-attrs-2.7/header-attrs.js","dataviz-makeover-1_files/jquery-1.11.3/jquery.min.js","dataviz-makeover-1_files/popper-2.6.0/popper.min.js","dataviz-makeover-1_files/tippy-6.2.7/tippy-bundle.umd.min.js","dataviz-makeover-1_files/tippy-6.2.7/tippy-light-border.css","dataviz-makeover-1_files/tippy-6.2.7/tippy.css","dataviz-makeover-1_files/tippy-6.2.7/tippy.umd.min.js","dataviz-makeover-1_files/webcomponents-2.0.0/webcomponents.js","img/original visualisation.png"]}
+  {"type":"character","attributes":{},"value":["dataviz-makeover-1_files/anchor-4.2.2/anchor.min.js","dataviz-makeover-1_files/bowser-1.9.3/bowser.min.js","dataviz-makeover-1_files/distill-2.2.21/template.v2.js","dataviz-makeover-1_files/header-attrs-2.7/header-attrs.js","dataviz-makeover-1_files/jquery-1.11.3/jquery.min.js","dataviz-makeover-1_files/popper-2.6.0/popper.min.js","dataviz-makeover-1_files/tippy-6.2.7/tippy-bundle.umd.min.js","dataviz-makeover-1_files/tippy-6.2.7/tippy-light-border.css","dataviz-makeover-1_files/tippy-6.2.7/tippy.css","dataviz-makeover-1_files/tippy-6.2.7/tippy.umd.min.js","dataviz-makeover-1_files/webcomponents-2.0.0/webcomponents.js","img/Design Sketches.jpg","img/Fig 10 duplicate for other charts.png","img/Fig 11 duplicate for other charts.PNG","img/Fig 11a duplicate for other charts.png","img/Fig 12 Dashboard first preview.png","img/Fig 12a Dashboard first preview.png","img/Fig 13 fixing the scale of y axis.PNG","img/Fig 13a fixing the scale of y axis.PNG","img/Fig 13b fixing the scale of y axis.png","img/Fig 14 Edit Legends.png","img/Fig 14a Edit Legends.PNG","img/Fig 14b Edit Legends.png","img/Fig 14c Edit Legends.PNG","img/Fig 14d Edit Legends.PNG","img/Fig 15 label the start and end of the line chart.png","img/Fig 16 dashboard.png","img/Fig 17 adding flag after.png","img/Fig 17 adding flag before.png","img/Fig 18 clean up Dashboard.png","img/Fig 19 annotation on key higlights.png","img/Fig 19a annotation on key higlights.PNG","img/Fig 19b annotation on key higlights.PNG","img/Fig 19c annotation on key higlights.PNG","img/Fig 20 Dashboard export.png","img/Fig 4 Extracts from T1.png","img/Fig 5 Extracts combined.PNG","img/Fig 6 cleaned data A.PNG","img/Fig 6 cleaned data B.PNG","img/Fig 6 cleaned data.PNG","img/Fig 7 Tableau import data A.PNG","img/Fig 7 Tableau import data.PNG","img/Fig 8 Change Data type of Year Month to Date format.PNG","img/Fig 9 creating hong kong line chart.PNG","img/Fig 9a creating hong hong line chart.PNG","img/Fig 9b creating hong hong line chart.PNG","img/Fig 9c creating hong hong line chart.PNG","img/Fig 9d creating hong hong line chart.PNG","img/Fig 9e creating hong hong line chart.PNG","img/Fig 9f creating hong hong line chart.PNG","img/Fig 9g creating hong hong line chart.PNG","img/Fig 9h creating hong hong line chart.PNG","img/Fig 9j creating hong hong line chart.png","img/Fig 9k creating hong hong line chart.png","img/Fig 9l creating hong hong line chart.png","img/Fig 9m creating hong hong line chart.png","img/Fig 9n creating hong hong line chart.png","img/Fig 9o creating hong hong line chart.png","img/Fig 9p creating hong hong line chart.png","img/Fig 9q creating hong hong line chart.png","img/Fig 9r creating hong hong line chart.png","img/Fig 9s creating hong hong line chart.PNG","img/Fig3 Data in Excel.PNG","img/original visualisation.png","img/tmp/Dashboard 1.png","img/tmp/Fig3 Data in Excel.jpg","img/Transpose Fig 7.png"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
 <meta name="distill:offset" content="../.."/>
@@ -2098,50 +2098,275 @@ document.addEventListener('DOMContentLoaded', function() {
 </div>
 
 <div class="d-article">
-<p>Distill is a publication format for scientific and technical writing, native to the web.</p>
-<p>Learn more about using Distill at <a href="https://rstudio.github.io/distill" class="uri">https://rstudio.github.io/distill</a>.</p>
 <h1 id="critique-of-visualisation">1.0 Critique of Visualisation</h1>
 <p>The original visualisation can be seen below.</p>
-<p><img src="img/original%20visualisation.png" /></p>
+<p><img src="img/original%20visualisation.png" /> Figure 1: Chart of original visualisation</p>
+<p>The data visualisation above is created by using data provided by Department of Statistics, Singapore (DOS). The data are available under <a href="https://www.singstat.gov.sg/find-data/search-by-theme/trade-and-investment/merchandise-trade/latest-data">the sub-section of Merchandise Trade by Region/Market.</a></p>
 <h3 id="clarity">1.1 Clarity</h3>
-<ol type="1">
-<li>The chart Title stated 2019-2020 duration but most of the graph show 2019 to 2021 and for Japan, the data shown is only for 2020. The chart title could have been more specific to mentioned that this data is for import and export trades of the six countries.</li>
-<li>The dual x axis is not of equal scale and this may create misrepresentation visually.</li>
-<li>Y axis show month of period, but the months wasn’t shown in the y axis and this create confusion which period is the months being used and there is 2021 data being included</li>
-<li>The x axis scale are not consistent for import and export. For example, for Hong Kong, the export is in scale of millions and import are in scale of thousands</li>
-<li>Poor choice of chart used as area chart doesn’t look clear when import and export data are combined and overlap each other. This result in difficulty in interpreting the data</li>
-<li>There are three type of colours appearing in some of the charts (for example mainland china and Malaysia) despite the legends only show two colours. This create confusion on the colour not stated in the legend and what is this colour for.</li>
-<li>There is a lack of meaning in the charts as we couldn’t see the pattern of the import and exports</li>
-</ol>
+<table>
+<colgroup>
+<col style="width: 7%" />
+<col style="width: 92%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>S/N</th>
+<th>Critiques</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>The Area charts is inconsistent with the Chart Title. The title indicate the period of data is from 2019-2020, however some area charts show data from 2019-2021 and for the Japan chart, the data is only for 2020.</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>The Dual Axis Charts may mislead readers as the y-axis shows different scales for the exports and imports data. Dual Axis Charts may create misrepresentation visually and resulting readers to interpret the charts wrongly.</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>The Area Charts show overlapping between the exports and imports data resulting in three colours tones. This make it hard for the readers to interpret the charts to see how the values have changes over time.</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>Month of period is stated in the X Axis Title and it did not specify which months are the data being derived from</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>There is no explanation or commentary to suggest how the reader read this Chart as the Chart title is very general.</td>
+</tr>
+</tbody>
+</table>
 <h3 id="aesthetic">1.2 Aesthetic</h3>
+<table>
+<colgroup>
+<col style="width: 7%" />
+<col style="width: 92%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>S/N</th>
+<th>Critiques</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>The usage of colour in the area charts does not look appealing and visually the blue and yellow colour resulting in a overlapping colour which is brownish. The brownish area was not accounted for in the legends on what it is represented for.</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>The country names are not aligned in the centre of each area chart which may make readers hard to visualise which chart is represented by which country.</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>The country names font size are bigger than the title font and this bring the focus of the reader away from the chart title which should be the main focus.</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>The grid lines and tick marks are missing to help the reader to refer to the Axis labels.</td>
+</tr>
+</tbody>
+</table>
+<h1 id="proposed-design">2.0 Proposed Design</h1>
+<h3 id="the-sketch-of-proposed-design-can-be-seen-below.">2.1 The sketch of proposed design can be seen below.</h3>
+<p><img src="img/Design%20Sketches.jpg" /> Figure 2: proposed design sketches</p>
+<h3 id="advantages-of-proposed-design">2.2 Advantages of proposed design</h3>
+<p><strong>Clarity</strong></p>
 <ol type="1">
-<li>Poor use of colour, the muddy yellow doesn’t look appealing and didn’t mix very well with the blue colour</li>
-<li>Export and import are repeated over all charts and make the charts all look very cramp altogether</li>
-<li>The countries name are not layout properly and not align in the middle of the graph it is representing</li>
-<li>The countries name font are bigger than the title of the chart</li>
-<li>The measure names in the legend should not be there as it represent no meaning to the viewer</li>
-<li>There is a lack of guidelines or marker on the axis to clearly label the data</li>
+<li>Provide a clearer Chart title to explain the data is based on imports and exports of top six trading countries.</li>
+<li>To provide a short commentary to provide more insights on explaining the proposed new visualization</li>
+<li>Use of line chart to better illustrate time series data</li>
+<li>Use single Y Axis with same scale for all the charts to better represent the data</li>
+<li>Every Chart to visualize data from 2019 to 2020 as compared to the original visualisation</li>
+<li>To propose X Axis to be quarterly time scale to show seasonal trends</li>
 </ol>
-<h1 id="alternative-design">2.0 Alternative Design</h1>
-<h3 id="clarity-1">2.1 Clarity</h3>
+<p><strong>Aesthetic</strong></p>
 <ol type="1">
-<li>Clearer title to illustrate what the charts are presenting on the 6 countries export and import data</li>
-<li>To provide a clear illustration using same scale for the import and export data for x axis</li>
-<li>All the charts to show consistent data for comparison from Jan 2019 to Dec 2020 for y axis</li>
-<li>Using a line chart which WILL present time series data more Clearly</li>
-<li>Trade data are usually more seasonal and quarter data may help to show the trends</li>
-</ol>
-<h3 id="aesthetic-1">2.2 Aesthetic</h3>
-<ol type="1">
-<li>Use of two colour, one to represent import and one to represent export to make viewing more clearer and consistent</li>
-<li>Annotations are used to emphasize key observations. (when imports or exports volume drop)</li>
-<li>Colour is used to bring to attention different categories (blue for import, red for export)</li>
-<li>Y-axis is formatted to same scale</li>
+<li>Use of two colour (red and blue), one to represent imports and the other to represent exports to make viewing more clearer and consistent across all charts</li>
+<li>Annotations are used to emphasize key observations per chart</li>
+<li>Align the country name properly per chart</li>
 </ol>
 <h1 id="proposed-visualisation">3.0 Proposed Visualisation</h1>
-<p>Please view the interactive visualisation on Tableau Public here remember to create link here</p>
-<h1 id="step-by-step-guide">4.0 Step-by-step Guide</h1>
+<p><img src="img/Fig%2020%20Dashboard%20export.png" /> Figure 3. The revamp visualization</p>
+<p>Please view the interactive visualisation on Tableau Public <a href="https://public.tableau.com/app/profile/klsng/viz/DataVizMakeover1Finalv3/Dashboard1">here</a>.</p>
+<h1 id="step-by-step-on-preparation">4.0 Step-by-step on Preparation</h1>
+<h3 id="step-1---data-preparation">Step 1 - Data Preparation</h3>
+<p><strong>Download and extract relevant data in Excel to prepare data</strong></p>
+<p>The original raw data can be seen below.</p>
+<p><img src="img/Fig3%20Data%20in%20Excel.PNG" /> Figure 4a. Image of raw data in excel</p>
+<p><strong>Extracting relevant data in worksheet T1 (merchandise Imports)</strong></p>
+<p>Clean up is done in excel with the following steps:</p>
+<table>
+<colgroup>
+<col style="width: 7%" />
+<col style="width: 92%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>S/N</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>Removing Total merchandise import in T1 worksheet</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>Removing Subject, Title, Topic</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>The data from 1976 Jan to 2018 Dec and 2021 Jan to 2021 April are all removed</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>The country are all removed except Hong Kong, Japan, Malaysia, Mainland China, United States and Taiwan</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>The country names are renamed as Hong Kong Imports, Japan Imports, Malaysia Imports, Mainland China Imports, United States Imports and Taiwan Imports. (Thousand Dollars are all removed from country name as the currency format are all the same for these 6 countries)</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>Renamed Column A as Country</td>
+</tr>
+</tbody>
+</table>
+<p>The extracted data from T1 worksheet can be seen below.</p>
+<p><img src="img/Fig%204%20Extracts%20from%20T1.png" /> Figure 4b. Image of raw data in excel</p>
+<p><strong>Extracting relevant data in worksheet T2 (merchandise Exports)</strong></p>
+<p>The same steps are repeated for worksheet T2 and country renames as Hong Kong Exports, Japan Exports, Malaysia Exports, Mainland China Exports, United States Exports and Taiwan Exports.</p>
+<p>The Imports and Exports data are then combined into one worksheet.</p>
+<p>The combined worksheet can be seen below.</p>
+<p><img src="img/Fig%205%20Extracts%20combined.PNG" /> Figure 5. Image of raw data in excel</p>
+<p><strong>The Transpose function in excel is used to transpose columns to rows in the combined worksheet</strong></p>
+<p>The data cleaned worksheet can be seen below.</p>
+<p><strong>Image 1</strong> <img src="img/Fig%206%20cleaned%20data%20A.PNG" /> Figure 6. Image of raw data in excel</p>
+<p><strong>Image 2 (includes the hidden country)</strong> <img src="img/Fig%206%20cleaned%20data%20B.PNG" /> Figure 7. Image of raw data in excel</p>
+<h3 id="step-2---importing-cleaned-data-into-tableau-desktop-professional-edition-64-bits">Step 2 - Importing cleaned Data into Tableau Desktop (Professional Edition 64 bits)</h3>
+<p>Bring up <strong>Summary Imports Exports worksheet</strong> into the Data Source to be used for creating the Visualisation <img src="img/Fig%207%20Tableau%20import%20data%20A.PNG" /> Figure 8. Importing data into Tableau</p>
+<h3 id="step-3---change-data-type-of-variable-year-month">Step 3 - Change Data Type of Variable Year Month</h3>
+<p>In the worksheet Tab 1, we will change the data type of <strong>Year Month</strong> from String format to Date format. This enable us to use **Year Month"" as a dimension variable for time series data.</p>
+<p><img src="img/Fig%208%20Change%20Data%20type%20of%20Year%20Month%20to%20Date%20format.PNG" /> Figure 9. Changing data type of variable</p>
+<h3 id="step-4---creating-the-first-chart---hong-kong-merchanise-trade-from-2019-2020">Step 4 - Creating the first chart - Hong Kong Merchanise Trade from 2019-2020</h3>
+<p>Firstly, we will place the dimension variable <strong>Year Month</strong> into Columns and measure variable <strong>Hong Kong Exports</strong> into Rows that can be seen below.</p>
+<p><img src="img/Fig%209a%20creating%20hong%20hong%20line%20chart.PNG" /> Figure 10. Hong Kong Worksheet visual designing process</p>
+<p>We will then selected <strong>continous line chart</strong> from <strong>show me chart selection</strong> that can be seen below.</p>
+<p><img src="img/Fig%209b%20creating%20hong%20hong%20line%20chart.PNG" /> Figure 11. Hong Kong worksheet visual designing process</p>
+<p>We will place measure variable <strong>Hong Hong Imports</strong> into Y Axis that can be seen below.</p>
+<p><img src="img/Fig%209c%20creating%20hong%20hong%20line%20chart.PNG" /> Figure 12. inserting Hong Kong imports in Y Axis</p>
+<p>Now there is two lines in the chart, one representing Hong Kong exports and the other representing Hong Kong imports that can be seen below.</p>
+<p><img src="img/Fig%209d%20creating%20hong%20hong%20line%20chart.PNG" /> Figure 13. Display of continuous line chart with imports and exports data of Hong Kong</p>
+<p>We will proceed to change <strong>Year Month</strong> into <strong>Quarter continuous format</strong> to view the seasonality trend of the data.</p>
+<p><img src="img/Fig%209e%20creating%20hong%20hong%20line%20chart.PNG" /> Figure 14. Changing Dimension variable Year Month into Quarter continous format</p>
+<p>Now we can see some seasonality trend from the line chart as shown below, we will proceed to edit the colour of the line chart to make the chart easier to read.</p>
+<p><img src="img/Fig%209f%20creating%20hong%20hong%20line%20chart.PNG" /> Figure 15. View of the seasonal trends in the line chart</p>
+<p>We decided to go with <strong>Red Colour</strong> for Hong Kong Exports and <strong>Blue colour</strong> for Hong Kong Imports.</p>
+<p><img src="img/Fig%209g%20creating%20hong%20hong%20line%20chart.PNG" /> Figure 16. setting two colour (red and blue) in the line chart</p>
+<p>Next I will format the grid line, axis rulers to darken the axis line so that the line Chart will look neater.</p>
+<p><img src="img/Fig%209h%20creating%20hong%20hong%20line%20chart.PNG" /> Figure 17. Ready to format the grid line and axis line</p>
+<p>Formatting the <strong>Grid line</strong> with the settings that can be seen below. This enable reader to reference to the axis label easily.</p>
+<p><img src="img/Fig%209j%20creating%20hong%20hong%20line%20chart.png" /> Figure 18. Edit Settings of grid lines</p>
+<p>Formatting the <strong>axis rulers</strong> with the settings that can be seen below. This help to the reader to view the axis range clearly.</p>
+<p><img src="img/Fig%209k%20creating%20hong%20hong%20line%20chart.png" /> Figure 19. Edit settings of Axis Rulers</p>
+<p>Next, i will work on the X axis to <strong>bold the X axis label</strong> and follow up editing the X axis to <strong>remove the axis title</strong> as it is self explanatory with the date labels shown.</p>
+<p><img src="img/Fig%209l%20creating%20hong%20hong%20line%20chart.png" /> Figure 20. Formatting X Axis</p>
+<p><img src="img/Fig%209m%20creating%20hong%20hong%20line%20chart.png" /> Figure 21. Bold the Axis Label</p>
+<p><img src="img/Fig%209n%20creating%20hong%20hong%20line%20chart.png" /> Figure 22. Result after Axis label have been bold</p>
+<p>Editing the X axis to remove the title and <strong>setting the Tick Mark to both X and Y axis</strong> so that the corresponding values can easily reference by the reader.</p>
+<p><img src="img/Fig%209o%20creating%20hong%20hong%20line%20chart.png" /> Figure 23. Ready to edit X axis</p>
+<p><strong>Removing the title</strong> on the X axis</p>
+<p><img src="img/Fig%209p%20creating%20hong%20hong%20line%20chart.png" /> Figure 24. Removing X Axis Title</p>
+<p>Formatting the <strong>Axis Ticks</strong> on X axis as seen below.This help to provide a reference to the label and this is important for a line chart so that the axis label can be reference by the reader.</p>
+<p><img src="img/Fig%209q%20creating%20hong%20hong%20line%20chart.png" /> Figure 25. Edit settings of the Axis Ticks</p>
+<p>Next I will <strong>format the Y axis with the same steps we did for X axis</strong> by formatting the Y Axis and we will also edit the Y axis to remove the axis title. Thereafter we will follow up by editing the chart title.</p>
+<p>The result of the formatting and editing of both axis can be seen below.The chart now have a clean look showing the trend of the line chart and now i will give the chart a title to represent it properly.</p>
+<p>We will proceed to <strong>edit the chart title</strong>. As seen below, the result of the formatting and editing both the X and Y axis.</p>
+<p><img src="img/Fig%209r%20creating%20hong%20hong%20line%20chart.png" /> Figure 26. Result after formatting Y axis and ready to edit chart title</p>
+<p>We will just proceed to give the chart name as <strong>Hong Kong Merchandise Trade</strong> and we will insert the dimenstion variable <strong>&lt;QUARTER(Year Month)&gt;</strong> in the chart title.</p>
+<p><img src="img/Fig%209s%20creating%20hong%20hong%20line%20chart.PNG" /> Figure 27. Editing the Chart Title</p>
+<h3 id="step-5---we-will-proceed-to-create-the-line-charts-for-mainland-china-japan-malaysia-taiwan-and-united-state-using-the-same-steps-in-creating-the-hong-kong-line-chart">Step 5 - We will proceed to create the line charts for Mainland China, Japan, Malaysia, Taiwan and United State using the same steps in creating the Hong Kong Line Chart</h3>
+<p>Firstly, we will duplicate the Hong Kong worksheet to create the other country line chart by editing the filter measure name as follow.</p>
+<p><strong>Duplicating the Hong Hong Worksheet</strong>*</p>
+<p><img src="img/Fig%2010%20duplicate%20for%20other%20charts.png" /> Figure 28. Duplicating Hong Kong worksheet</p>
+<p>Next we will use Edit Filter to select the measure values for the other country as seen below.</p>
+<p><img src="img/Fig%2011a%20duplicate%20for%20other%20charts.png" /> Figure 29. Using Edit filter to prepare visual for other country</p>
+<p>We will select the measure names accordingly, for example <strong>Mainland China</strong> to create the next line chart.</p>
+<p><img src="img/Fig%2011%20duplicate%20for%20other%20charts.PNG" /> Figure 30. Select Mainland China Exports and Imports from measure names filter</p>
+<p>The above steps are repeated to create all the line charts for the remaining 4 countries <strong>Japan, Malaysia, Taiwan and United States</strong>.</p>
+<h3 id="step-6-standardise-the-y-axis-scale-of-the-line-charts">Step 6 Standardise the Y axis scale of the line charts</h3>
+<p>The overview of all 6 line charts as shown below did not have the same Y axis scale. It is important to standardise the scale in order for viewers not to misread the charts. Hence, we will <strong>standardise the Y axis scale</strong>.</p>
+<p><img src="img/Fig%2012%20Dashboard%20first%20preview.png" /> Figure 31. Visual of first preview on the dashboard after combining all the line charts</p>
+<p>We found that <strong>China have the highest Y axis value</strong> (as shown below) as compared to the other country charts. We will proceed to <strong>edit and fixed the range of the y axis to be from 0 to 22,000,000</strong> for all the line charts as shown below.</p>
+<p><img src="img/Fig%2013%20fixing%20the%20scale%20of%20y%20axis.PNG" /> Figure 32. preparing to edit Y Axis of all the charts</p>
+<p>We will set the fixed range to be <strong>0 to 22,000,000</strong> for all the line charts.</p>
+<p><img src="img/Fig%2013a%20fixing%20the%20scale%20of%20y%20axis.PNG" /> Figure 33. Fixed the scale to be within 0 to 22million</p>
+<p>We will set the Tick Marks with the <strong>Major Tick Marks as Fixed from 0 to 5,000,000</strong> and the <strong>Minor Tick Marks to be from 0 to 1,000,000</strong> for all the charts. This allow the reader to be able to reference to the axis labels more easily as there is a huge range of values across all the 6 charts.</p>
+<p><img src="img/Fig%2013b%20fixing%20the%20scale%20of%20y%20axis.png" /> Figure 34. Fixing the scale of Tick Marks for each chart</p>
+<h3 id="step-6-creating-a-common-legends-for-the-line-charts">Step 6 Creating a common legends for the line charts</h3>
+<p>As the 6 charts use <strong>red colour line for exports</strong> and <strong>blue colour line for imports</strong>. We will create a common legends for reader to reference to which will be used when building our dash board.</p>
+<p>We will edit the title from measure names to <strong>Legends</strong>.</p>
+<p><img src="img/Fig%2014%20Edit%20Legends.png" /> Figure 35. preparing to edit title of legends</p>
+<p><img src="img/Fig%2014a%20Edit%20Legends.PNG" /> Figure 36. Changing the name of the legends</p>
+<p>Next We will <strong>edit Alias</strong> on the Hong Kong worksheet and we will hide the legends on other charts and will use this as a common legends in our dash board.</p>
+<p><img src="img/Fig%2014c%20Edit%20Legends.PNG" /> Figure 36. preparing to edit Alias</p>
+<p>We will <strong>edit the Alias to Exports and Imports respectively</strong>.</p>
+<p><img src="img/Fig%2014d%20Edit%20Legends.PNG" /> Figure 37. Changing Alias name to imports and exports respectively</p>
+<h3 id="step-7-mark-label-the-start-of-q1-2019-and-q4-2020-for-both-imports-and-exports-data">Step 7 Mark Label the Start of Q1 2019 and Q4 2020 for both imports and exports data</h3>
+<p>We want the reader of the chart to see the progress of the time series data from Jan 2019 to Dec 2020. Hence we will label the chart using the label function in the Marks pane which can be seen below. We will check <strong>show mark labels</strong> and <strong>selecting line ends</strong>.</p>
+<p><img src="img/Fig%2015%20label%20the%20start%20and%20end%20of%20the%20line%20chart.png" /> Figure 38. Setting show label on both ends of the line charts for imports and exports</p>
+<h3 id="step-8-combining-the-6-line-charts-into-dash-board">Step 8 Combining the 6 line charts into dash board</h3>
+<p>we will set up our dashboard and we will <strong>customize the size to 1700 x 800</strong> as there are 6 Charts to fit in. We put in the required containers and move all the line charts into the dash board. Next a title is given for the Dashboard <strong>Merchandise Trade of Top Six Trading Countries Jan 2019 - Dec 2020</strong> as seen below.</p>
+<p><img src="img/Fig%2016%20dashboard.png" /> Figure 39. customizing the dash board size and editing title of dash board</p>
+<h3 id="step-9-we-will-add-in-country-flags-to-give-the-dash-board-a-better-aesthetic-look.">Step 9 We will add in Country Flags to give the Dash board a better aesthetic look.</h3>
+<p>In the Dash Board, we will Use <strong>Image feature</strong> and <strong>set to floating</strong>, we placed the flag into the respective chart after download the flags images from Wikipedia. The view of the dash board are as follow after including the flag images.</p>
+<p><img src="img/Fig%2017%20adding%20flag%20before.png" /> Figure 40. Dash Board Before adding flag images</p>
+<p><img src="img/Fig%2017%20adding%20flag%20after.png" /> Figure 41. Dash Board after adding the flag images</p>
+<h3 id="step-10-to-review-and-clean-up-the-dashboard-to-improve-on-the-clarity">Step 10 to review and clean up the Dashboard to improve on the clarity</h3>
+<p>The title of the Individual chart seems to be repeating the title of the dashboard and this make it hard to read after combining them into dashboard. We will <strong>edit the title of the individual chart to just the country name</strong>.</p>
+<p><img src="img/Fig%2018%20clean%20up%20Dashboard.png" /> Figure 42. Dash Board after editing the individual chart title</p>
+<h3 id="step-11-to-create-a-commentaries-in-the-dashboard-so-that-the-viewers-will-have-a-summary-on-the-key-findings-while-referencing-to-the-charts">Step 11 to create a commentaries in the dashboard so that the viewers will have a summary on the key findings while referencing to the charts</h3>
+<p>We will do up the commentaries to provide the key highlights and findings from the visualisation. Annotation will be added to the chart for viewer to view the focus points.</p>
+<p>Firstly, we will <strong>add annotation</strong> to the focus point.</p>
+<p><img src="img/Fig%2019%20annotation%20on%20key%20higlights.png" /> Figure 43. Preparing to add annotation</p>
+<p>Annotation is added to <strong>illustrate key findings</strong> in each chart.</p>
+<p><img src="img/Fig%2019a%20annotation%20on%20key%20higlights.PNG" /> Figure 44. Adding annotation to show key highlights</p>
+<p>Formatting is done to the annotation to <strong>include dotted lines</strong>.</p>
+<p><img src="img/Fig%2019b%20annotation%20on%20key%20higlights.PNG" /> Figure 45. Setting annotation formatting</p>
+<p>Next, we will edit the Dash Board Title to <strong>include commentaries</strong> to provide a brief summary of the charts.</p>
+<p><img src="img/Fig%2019c%20annotation%20on%20key%20higlights.PNG" /> Figure 46. Editing title of Dash Board to include commentaries</p>
+<h3 id="the-final-dashboard-is-ready">The final dashboard is ready!</h3>
+<p><img src="img/Fig%2020%20Dashboard%20export.png" /> Figure 47. The final dashboard version</p>
 <h1 id="derived-insights">5.0 Derived Insights</h1>
+<table>
+<colgroup>
+<col style="width: 5%" />
+<col style="width: 94%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>S/N</th>
+<th>Major Observations</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>The period of data used was from Jan 2019 to Dec 2020. Convid 19 was first reported on 31 Dec 2019 accordingly to sources from <a href="https://www.who.int/news/item/27-04-2020-who-timeline---covid-19">World Health organisation website</a>. From the visualiation that we have created, it can be seen that Mainland China exports and imports was badly affected and this could be due to the lockdown in Wuhan China due to the severely of the Convid 19 situation. Subsequently in 2020 Q2 around April, China ended lockdown in Wuhan from sources from <a href="https://www.nytimes.com/2020/04/07/world/asia/wuhan-coronavirus.html">The New York Times</a>. The exports and imports then start to pick up from Q2 2020 as many major China states open up when Convid 19 situation in China stabilised down.</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>Convid 19 subsequently spread to most parts of the world, Malaysia and United States merchandise trading were most likely to be affected from Convid 19 restrictions that follow which suggested that the exports and imports numbers start to fall from 2019 Q4 to 2020 Q2. United States seems to be doing better in its export tradings as compared to imports as it is likely their trading partners are facing Convid 19 restriction to export to United States.</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>For Hong Kong, Japan and Taiwan, the Convid 19 situation are very much under control during this period and this could likely due to their people have been used to wearing masks in public which help to contain potential virus outbreak. This could be one of the possible reasons that their imports and exports trading activity have not been impacted during these period.</td>
+</tr>
+</tbody>
+</table>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
